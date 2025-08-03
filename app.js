@@ -20,7 +20,7 @@ const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 
-const mongoUrl = process.env.ATLASDB_URL; // ✅ Renamed from dbUrl
+const mongoUrl = process.env.ATLASDB_URL; 
 
 main().then(() => {
     console.log("Connected to DB");
@@ -40,22 +40,22 @@ app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 const store = MongoStore.create({
-    mongoUrl: mongoUrl, // ✅ Ensures MongoDB URL is passed
+    mongoUrl: mongoUrl, 
     crypto: {
-        secret: process.env.SECRET, // ✅ Correct usage
+        secret: process.env.SECRET, 
     },
     touchAfter: 24 * 3600
 });
 
 store.on("error", (e) => {
-    console.log("ERROR IN MONGO SESSION STORE", e); // ✅ Fixed incorrect variable `error`
+    console.log("ERROR IN MONGO SESSION STORE", e);
 });
 
 const sessionOptions = {
     store,
-    secret: process.env.SECRET, // ✅ Fixed incorrect string literal
+    secret: process.env.SECRET,
     resave: false,
-    saveUninitialized: true, // ✅ Fixed typo
+    saveUninitialized: true, 
     cookie: {
         expires: Date.now() + 7 * 24 * 60 * 60 * 1000,
         maxAge: 7 * 24 * 60 * 60 * 1000,
