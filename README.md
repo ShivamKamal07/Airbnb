@@ -36,7 +36,9 @@ The project features secure authentication, property listings, booking functiona
       cd Airbnb
   3.Install dependencies:
     ```bash
-      npm install
+       npm install
+       
+      
   4. Create a .env file and add API keys:
      ```bash
      CLOUD_NAME=your_cloud_name
@@ -47,8 +49,7 @@ The project features secure authentication, property listings, booking functiona
      SECRET=your_secret_key
   5.🚀 Run the project:
      ```bash
-  
-      npm start
+        npm start
    
 
 
