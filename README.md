@@ -37,6 +37,7 @@ The project features secure authentication, property listings, booking functiona
 3.Install dependencies:  npm install
 
 4. Create a .env file and add API keys:
+
    CLOUD_NAME =
    CLOUD_API_KEY =
    CLOUD_API_SECRET =
@@ -45,7 +46,7 @@ The project features secure authentication, property listings, booking functiona
    SECRET =
 
 5.Run the project:
-npm start
+  npm start
 
 
    
