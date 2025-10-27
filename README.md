@@ -3,6 +3,8 @@
 A full-stack travel accommodation platform inspired by Airbnb, built using **Node.js**, **Express.js**, and **MongoDB**.
 The project features secure authentication, property listings, booking functionality, and a responsive UI for seamless user experience across all devices.
 
+**Live Demo:**  https://wanderlust-vtdo.onrender.com/listings
+
 ---
 
 ## 🚀 Features
