@@ -36,6 +36,7 @@ The project features secure authentication, property listings, booking functiona
       cd Airbnb
   3.Install dependencies:
     ```bash
+       
        npm install
        
       
@@ -49,6 +50,7 @@ The project features secure authentication, property listings, booking functiona
      SECRET=your_secret_key
   5.🚀 Run the project:
      ```bash
+        
         npm start
    
 
