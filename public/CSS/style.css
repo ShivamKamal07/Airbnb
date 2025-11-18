@@ -10,6 +10,7 @@ body{
 .navbar{
     height: 5rem;
     background-color: white;
+    
 }
 
 .fa-campass{
@@ -17,9 +18,10 @@ body{
     font-size: 2rem;
 }
 
-.nav-link{
-    color: #222222 !important;
-}
+/* .nav-link{
+    
+    margin-right: 1rem !important;
+} */
 
 /* footer */
 
@@ -171,4 +173,9 @@ body{
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
 }
-      
+   
+.f-info-social a {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: black;
+}
