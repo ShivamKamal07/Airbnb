@@ -9,7 +9,7 @@ The project features secure authentication, property listings, and a responsive 
 
 ## 🚀 Features
 - Secure **JWT-based Authentication (Login/Signup)**
-- **Property Listing & Booking System**
+- **Property Listing 
 - Advanced **Search and Filter** (by location, price, amenities, dates)
 - Fully **Responsive Design** for desktop and mobile
 - **RESTful APIs** for frontend-backend communication
