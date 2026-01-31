@@ -30,4 +30,21 @@ router
 
 router.get("/:id/edit",isLoggedIn,isOwner,wrapAsync(listingController.editListing));
 
+router.get("/", async (req, res) => {
+    const { category } = req.query;
+
+    let allListings;
+
+    if (category) {
+        // jab user filter pe click kare
+        allListings = await Listing.find({ category: category });
+    } else {
+        // normal case (no filter)
+        allListings = await Listing.find({});
+    }
+
+    res.render("listings/index.ejs", { allListings });
+});
+
+
 module.exports = router;    

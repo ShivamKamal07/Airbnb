@@ -195,3 +195,14 @@
   -webkit-transition: background-position .7s;
   transition: background-position .7s;
 }
+
+.filter {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+}
+
+.filter:hover {
+    transform: translateY(-4px);
+    color: #198754;
+}
