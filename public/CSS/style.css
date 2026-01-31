@@ -179,3 +179,34 @@ body{
     font-size: 1.5rem;
     color: black;
 }
+/* Login Card Hover */
+.login-card {
+    transition: all 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Input hover & focus */
+.form-control {
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-control:hover,
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+/* Login Button Hover */
+.btn-success {
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(25, 135, 84, 0.4);
+}
